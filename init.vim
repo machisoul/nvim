@@ -10,6 +10,17 @@
 
 
 " ==================== Auto load for first time uses ====================
+if empty(glob($HOME.'/.config/nvim/autoload/plug.vim'))
+	silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+let g:nvim_plugins_installation_completed=1
+if empty(glob($HOME.'/.config/nvim/plugged/wildfire.vim/autoload/wildfire.vim'))
+	let g:nvim_plugins_installation_completed=0
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 "nothing to do now!
 "nothing to do now!
 "nothing to do now!
@@ -99,8 +110,10 @@ noremap <silent> L 7l
 noremap <silent> <C-j> 0
 " Ctrl+L key: go to the end of the line
 noremap <silent> <C-l> $
-" jump to the next
-noremap <silent> <C-D> <C-I>
+" jump to the next/new position
+noremap <silent> <C-N> <C-I>
+" jump to the pervious position
+noremap <silent> <C-P> <C-O>
 " up or down 0.5 page.
 noremap <silent> <C-I> <C-U>
 noremap <silent> <C-K> <C-D>
@@ -178,6 +191,8 @@ Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'junegunn/vim-peekaboo'
+
+Plug 'gcmt/wildfire.vim'
 call plug#end()
 
 " ==================== eleline.vim ====================
@@ -188,6 +203,8 @@ call plug#end()
 
 " ==================== coc.nvim ====================
 let g:coc_global_extensions = [
+    \ 'coc-lists',
+    \ 'coc-json',
     \ 'coc-tsserver',
     \ 'coc-vimlsp',
     \ 'coc-diagnostic',

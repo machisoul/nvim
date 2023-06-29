@@ -1,4 +1,7 @@
 {
+    "list.previewHighlightGroup": "Statement",
+    "list.nextKeymap": "<C-l>",
+    "list.previousKeymap": "<C-j>",
     "suggest.noselect": true,
     "suggest.enablePreselect": false,
     "explorer.file.showHiddenFiles": true,
