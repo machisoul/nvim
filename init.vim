@@ -169,7 +169,7 @@ noremap tml :+tabmove<CR>
 
 
 " ==================== Visual Settings ====================
-noremap <C-a> ggVG
+noremap all ggVG
 
 
 " ==================== Other useful stuff ====================
@@ -239,6 +239,10 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+nnoremap <silent><nowait> <LEADER>d :CocList diagnostics<cr>
+nmap <silent> <LEADER>- <Plug>(coc-diagnostic-prev)
+nmap <silent> <LEADER>= <Plug>(coc-diagnostic-next)
+nnoremap <c-c> :CocCommand<CR>
 " Useful commands
 nnoremap <silent> <space>y :<C-u>CocList -A --normal yank<cr>
 nmap <silent> gd <Plug>(coc-definition)
