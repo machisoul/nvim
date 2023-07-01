@@ -121,6 +121,7 @@ noremap <silent> <C-K> <C-D>
 
 " ==================== Insert Mode Cursor Movement ====================
 inoremap <C-a> <ESC>A
+inoremap <C-h> <ESC>I
 inoremap <C-j> <Left>
 inoremap <C-l> <Right>
 
