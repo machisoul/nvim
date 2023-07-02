@@ -82,6 +82,8 @@ noremap h i
 noremap H I
 "" Copy to system clipboard
 vnoremap Y "+y
+"" Copy a line.
+noremap  yl 0v$hy
 " Search
 noremap n nzz
 noremap N Nzz
