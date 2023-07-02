@@ -115,8 +115,8 @@ noremap <silent> <C-N> <C-I>
 " jump to the pervious position
 noremap <silent> <C-P> <C-O>
 " up or down 0.5 page.
-noremap <silent> <C-I> <C-U>
-noremap <silent> <C-K> <C-D>
+noremap <silent> <C-I> <C-y>
+noremap <silent> <C-K> <C-e>
 
 
 " ==================== Insert Mode Cursor Movement ====================
@@ -318,3 +318,4 @@ let g:mkdp_open_to_the_world = 1
 let g:mkdp_echo_preview_url = 1
 let g:mkdp_open_ip = '127.0.0.1'
 let g:mkdp_port = '8888'
+source ~/.config/nvim/md-snippets.vim
