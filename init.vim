@@ -21,9 +21,6 @@ if empty(glob($HOME.'/.config/nvim/plugged/wildfire.vim/autoload/wildfire.vim'))
 	let g:nvim_plugins_installation_completed=0
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-"nothing to do now!
-"nothing to do now!
-"nothing to do now!
 
 
 " ==================== Editor behavior ====================
