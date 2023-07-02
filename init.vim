@@ -214,7 +214,7 @@ func! CompileRunGcc()
 	elseif &filetype == 'html'
 		silent! exec "!".g:mkdp_browser." % &"
 	elseif &filetype == 'markdown'
-		exec "InstantMarkdownPreview"
+		exec "MarkdownPreview"
 	elseif &filetype == 'tex'
 		silent! exec "VimtexStop"
 		silent! exec "VimtexCompile"
@@ -252,10 +252,8 @@ Plug 'junegunn/vim-peekaboo'
 
 Plug 'gcmt/wildfire.vim'
 
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
-Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-Plug 'dkarter/bullets.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
 call plug#end()
 
 " ==================== eleline.vim ====================
@@ -315,5 +313,8 @@ nmap tt :CocCommand explorer<CR>
 " ==================== vim-surround-mapping ====================
 
 
-" ==================== coc ====================
-
+" ==================== MarkdownPreview ====================
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_echo_preview_url = 1
+let g:mkdp_open_ip = '127.0.0.1'
+let g:mkdp_port = '8888'
