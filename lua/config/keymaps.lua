@@ -45,6 +45,28 @@ local nmappings = {
 	-- jump to the pervious position
 	{ from = "<c-n>",		to = "<c-i>",		mode = mode_nv },
 
+	-- Window & Splits
+	{ from = "<leader>i",		to = "<c-w>k", },
+	{ from = "<leader>k",		to = "<c-w>j", },
+	{ from = "<leader>j",		to = "<c-w>h", },
+	{ from = "<leader>l",		to = "<c-w>l", },
+	{ from = "s",		to = "<nop>", },
+	{ from = "si",		to = ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", },
+	{ from = "sk",		to = ":set splitbelow<CR>:split<CR>", },
+	{ from = "sj",		to = ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", },
+	{ from = "sl",		to = ":set splitright<CR>:vsplit<CR>", },
+	{ from = "<up>",		to = ":res +5<CR>", },
+	{ from = "<down>",		to = ":res -5<CR>", },
+	{ from = "<left>",		to = ":vertical resize-5<CR>", },
+	{ from = "<right>",		to = ":vertical resize+5<CR>", },
+	
+	-- Tab management
+	{ from = "ta",		to = ":tabe<CR>", },
+	{ from = "tA",		to = ":tab split<CR>", },
+	{ from = "tj",		to = ":-tabnext<CR>", },
+	{ from = "tl",		to = ":+tabnext<CR>", },
+	{ from = "tmj",		to = ":-tabmove<CR>", },
+	{ from = "tml",		to = ":+tabmove<CR>", },
 }
 
 
