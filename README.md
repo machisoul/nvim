@@ -47,6 +47,10 @@ mode switch:
 - ctrl+e: control the view to down.
 - zz: move the cursor line to the center of view.
 
+[n]cursor jump:
+- Ctrl-i: Jump to the next position.
+- Ctrl-o: Jump to the Old position.
+
 [i]cursor move:
 
 [?]cursor move:
