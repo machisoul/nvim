@@ -26,15 +26,15 @@ local nmappings = {
 	-- jump to the pervious position
 
 	-- Window & Splits
-	{ from = "<leader>k",	to = "<c-w>k" },
-	{ from = "<leader>j",	to = "<c-w>j" },
-	{ from = "<leader>h",	to = "<c-w>h" },
-	{ from = "<leader>l",	to = "<c-w>l" },
+	{ from = "<c-k>",	to = "<c-w>k" },
+	{ from = "<c-j>",	to = "<c-w>j" },
+	{ from = "<c-h>",	to = "<c-w>h" },
+	{ from = "<c-l>",	to = "<c-w>l" },
 	{ from = "s",	to = "<nop>" },
-	{ from = "sk",	to = ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>" },
-	{ from = "sj",	to = ":set splitbelow<CR>:split<CR>" },
-	{ from = "sh",	to = ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>" },
-	{ from = "sl",	to = ":set splitright<CR>:vsplit<CR>" },
+	{ from = "<leader>sk",	to = ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>" },
+	{ from = "<leader>sj",	to = ":set splitbelow<CR>:split<CR>" },
+	{ from = "<leader>sh",	to = ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>" },
+	{ from = "<leader>sl",	to = ":set splitright<CR>:vsplit<CR>" },
 	{ from = "<up>",	to = ":res +5<CR>" },
 	{ from = "<down>",	to = ":res -5<CR>" },
 	{ from = "<left>",	to = ":vertical resize-5<CR>" },
