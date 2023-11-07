@@ -47,6 +47,10 @@ local nmappings = {
 	{ from = "tl",	to = ":+tabnext<CR>" },
 	{ from = "tmh",	to = ":-tabmove<CR>" },
 	{ from = "tml",	to = ":+tabmove<CR>" },
+
+	-- NvimTree
+	{ from = "<leader>e",	to = ":NvimTreeToggle<CR>" },
+
 }
 
 
