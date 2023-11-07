@@ -5,7 +5,7 @@ local mode_v = { "v" }
 local mode_i = { "i" }
 local nmappings = {
 	-- Basic Mappings
-	{ from = "S",	to = ":w<CR>" },
+	{ from = "<c-s>",	to = ":w<CR>" },
 	{ from = "Q",	to = ":q<CR>" },
 	{ from = ";",	to = ":",	mode = mode_nv },
 
