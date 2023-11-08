@@ -15,5 +15,8 @@ vim.keymap.set("n", "<leader>pl", ":Lazy<CR>", { noremap = true})
 require("lazy").setup({
 	require("config.plugins.flash"),
 	require("config.plugins.nvim-tree"),
+	require("config.plugins.lspconfig").config,
+	require("config.plugins.autocomplete").config,
+	require("config.plugins.debugger"),
 })
 
