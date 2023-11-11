@@ -19,6 +19,10 @@ local nmappings = {
 	--" < h   l >
 	--"     j
 	--"     v
+	{ from = "K",	to = "5k",	mode = mode_nv },
+	{ from = "J",	to = "5j",	mode = mode_nv },
+	{ from = "H",	to = "0",	mode = mode_nv },
+	{ from = "L",	to = "$",	mode = mode_nv },
 	-- search result movement
 	-- view movement
 	-- jump movement
@@ -35,10 +39,10 @@ local nmappings = {
 	{ from = "<leader>sj",	to = ":set splitbelow<CR>:split<CR>" },
 	{ from = "<leader>sh",	to = ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>" },
 	{ from = "<leader>sl",	to = ":set splitright<CR>:vsplit<CR>" },
-	{ from = "<up>",	to = ":res +5<CR>" },
-	{ from = "<down>",	to = ":res -5<CR>" },
-	{ from = "<left>",	to = ":vertical resize-5<CR>" },
-	{ from = "<right>",	to = ":vertical resize+5<CR>" },
+	{ from = "<up>",	to = ":res +3<CR>" },
+	{ from = "<down>",	to = ":res -3<CR>" },
+	{ from = "<left>",	to = ":vertical resize-3<CR>" },
+	{ from = "<right>",	to = ":vertical resize+3<CR>" },
 	
 	-- Tab management
 	{ from = "ta",	to = ":tabe<CR>" },
